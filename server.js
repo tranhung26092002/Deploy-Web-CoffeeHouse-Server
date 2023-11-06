@@ -24,10 +24,10 @@ connectDb();
 
 // middleware router
 app.use('/api/auth', authRouter);
-app.use('/auth/admin', adminRouter);
-app.use('/auth/user', productRouter);
-app.use('/auth/user/infor',userRouter);
-app.use('/auth/user/bills',billRouter);
-app.use('/auth/manager', managerRouter);
+app.use('/api/auth/admin', adminRouter);
+app.use('/api/auth/user', productRouter);
+app.use('/api/auth/user/infor',userRouter);
+app.use('/api/auth/user/bills',billRouter);
+app.use('/api/auth/manager', managerRouter);
 
 app.listen(process.env.PORT, () => console.log(`Server running on ${process.env.PORT}`));
